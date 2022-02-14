@@ -70,3 +70,12 @@
 	--mobile-body2regular: 400 1rem/1.5rem Inter;
 	--mobile-body2bold: 700 1rem/1.5rem Inter;
 }
+
+.body {
+	background: var(--primary);
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-inline-size: 22.5rem;
+}
