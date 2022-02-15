@@ -88,13 +88,19 @@
 		<main>
 			<section class="app" aria-label="Calendar">
 				<section class="selected-date" aria-label="Selected date">
-					<time datetime="2021-06-03" class="selected-date__info">
+					<time
+						datetime="2021-06-03"
+						class="selected-date__info"
+						aria-label="June 3, 2021"
+					>
 						<span id="day" class="selected-date__day">3</span>
-						<span id="weekday">Thuesday</span>
-						&middot;
-						<span id="month">June</span>
-						&middot;
-						<span id="year">2021</span>
+						<span class="selected-date__details">
+							<span id="weekday">Thuesday</span>
+							<span aria-hidden="true">&middot;</span>
+							<span id="month">June</span>
+							<span aria-hidden="true">&middot;</span>
+							<span id="year">2021</span>
+						</span>
 					</time>
 				</section>
 				<section class="calendar__container" aria-label="Calendar of June 2021">
