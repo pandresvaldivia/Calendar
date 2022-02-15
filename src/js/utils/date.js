@@ -2,7 +2,7 @@ import { formatDate } from './format-data.js';
 
 const date = new Date();
 
-function getCurrentDate() {
+function getDate() {
 	const month = date.getMonth();
 	const year = date.getFullYear();
 	const day = date.getDate();
@@ -47,4 +47,10 @@ function isToday(date) {
 	if (date === currentDate) return true;
 }
 
-export { getCurrentDate, getMonthData, getDatetime, isToday };
+function changeMonth({ id }) {
+	id === 'next'
+		? date.setMonth(date.getMonth() + 1)
+		: date.setMonth(date.getMonth() - 1);
+}
+
+export { getDate, getMonthData, getDatetime, isToday, changeMonth };

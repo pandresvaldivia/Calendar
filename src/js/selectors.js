@@ -5,3 +5,5 @@ export const $selectedMonth = document.querySelector('#month');
 export const $selectedDay = document.querySelector('#day');
 export const $selectedWeekday = document.querySelector('#weekday');
 export const $monthContainer = document.querySelector('.calendar__month');
+export const $nextMonth = document.querySelector('#next');
+export const $prevMonth = document.querySelector('#prev');

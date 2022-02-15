@@ -7,6 +7,10 @@
 	gap: 0.6587rem;
 	align-items: center;
 	justify-content: center;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 .calendar__header {
@@ -46,6 +50,15 @@
 	-ms-border-radius: 50%;
 	-o-border-radius: 50%;
 	cursor: pointer;
+	transition: background 0.2s;
+	-webkit-transition: background 0.2s;
+	-moz-transition: background 0.2s;
+	-ms-transition: background 0.2s;
+	-o-transition: background 0.2s;
+}
+
+.calendar__date:not(.calendar__date--selected):hover {
+	background: var(--grey10);
 }
 
 .calendar__date--selected {

@@ -1,4 +1,4 @@
-import { getCurrentDate, getMonthData, getDatetime } from './utils/date.js';
+import { getDate, getMonthData, getDatetime } from './utils/date.js';
 import { createCell, clearElement } from './utils/dom.js';
 import {
 	$calendarYear,
@@ -11,19 +11,28 @@ import {
 } from './selectors.js';
 
 function printCurrentDate() {
-	const { day, weekday, month, year } = getCurrentDate();
+	printSelectedDate();
+	printCalendar();
+}
+
+function printCalendar() {
+	const { month, year } = getDate();
+	printMonth();
 
 	$calendarYear.innerText = year;
 	$calendarMonth.innerText = month;
+}
+
+function printSelectedDate() {
+	const { day, weekday, month, year } = getDate();
+
 	$selectedYear.innerText = year;
 	$selectedMonth.innerText = month;
 	$selectedDay.innerText = day;
 	$selectedWeekday.innerText = weekday;
-
-	createMonth();
 }
 
-function createMonth() {
+function printMonth() {
 	const { lastDay, firstWeekday } = getMonthData();
 
 	clearElement($monthContainer);
@@ -38,4 +47,4 @@ function createMonth() {
 	}
 }
 
-export { printCurrentDate };
+export { printCurrentDate, printCalendar };

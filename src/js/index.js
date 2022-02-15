@@ -6,6 +6,17 @@ import '../css/calendar.css';
 import '../css/button.css';
 import '../css/navigation.css';
 
-import { printCurrentDate } from './calendar.js';
+import { $prevMonth, $nextMonth } from './selectors.js';
+import { changeMonth } from './utils/date.js';
+import { printCurrentDate, printCalendar } from './calendar.js';
+
+$nextMonth.addEventListener('click', () => {
+	changeMonth($nextMonth);
+	printCalendar();
+});
+$prevMonth.addEventListener('click', () => {
+	changeMonth($prevMonth);
+	printCalendar();
+});
 
 printCurrentDate();
