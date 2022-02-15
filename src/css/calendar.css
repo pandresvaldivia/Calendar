@@ -1,0 +1,40 @@
+.calendar__container {
+	background: var(--white);
+}
+
+.calendar__header {
+	display: grid;
+	grid-template-columns: repeat(7, 1.6469rem);
+	font: var(--small);
+	text-transform: uppercase;
+	column-gap: 0.6587rem;
+	text-align: center;
+	margin-block-end: 0.3294rem;
+}
+
+.calendar__month {
+	display: grid;
+	grid-template-columns: repeat(7, 1.6469rem);
+	grid-template-rows: repeat(5, 1.6469rem);
+	font: var(--medium);
+	column-gap: 0.6587rem;
+	row-gap: 0.3294rem;
+	block-size: 9.5519rem;
+}
+
+.calendar__date {
+	box-sizing: border-box;
+	padding: 0.3294rem;
+	display: grid;
+	place-content: center;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+
+.calendar__date--selected {
+	background: var(--skyblue);
+	color: var(--primary);
+}
