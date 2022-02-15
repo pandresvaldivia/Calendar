@@ -30,7 +30,7 @@ function getMonthData() {
 }
 
 function getDatetime(day) {
-	const month = date.getMonth().toLocaleString('en-US', {
+	const month = (date.getMonth() + 1).toLocaleString('en-US', {
 		minimumIntegerDigits: 2,
 	});
 	const year = date.getFullYear();
@@ -41,4 +41,10 @@ function getDatetime(day) {
 	return `${year}-${month}-${day}`;
 }
 
-export { getCurrentDate, getMonthData, getDatetime };
+function isToday(date) {
+	const currentDate = new Date().toLocaleDateString('en-CA');
+
+	if (date === currentDate) return true;
+}
+
+export { getCurrentDate, getMonthData, getDatetime, isToday };
