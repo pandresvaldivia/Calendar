@@ -9,28 +9,37 @@ import {
 	$selectedDay,
 	$selectedWeekday,
 	$monthContainer,
+	$infoContainer,
+	$calendarSection,
 } from './selectors.js';
 
 function printCurrentDate() {
+	const datetime = getDatetime(new Date().getDate());
+	$infoContainer.dateTime = datetime;
+
 	printSelectedDate();
 	printCalendar();
 }
 
 function printCalendar() {
-	const { month, year } = getDate();
+	const { month, year, monthNum } = getDate();
 	printMonth();
 
+	$monthContainer.dateTime = `${year}-${monthNum}`;
+	$calendarSection.ariaLabel = `Calendar of ${month}, ${year}`;
 	$calendarYear.innerText = year;
 	$calendarMonth.innerText = month;
 }
 
 function printSelectedDate(data) {
-	const { day, weekday, month, year } = data || getDate();
+	const { day, weekday, month, year, readable } = data || getDate();
 
 	$selectedYear.innerText = year;
 	$selectedMonth.innerText = month;
 	$selectedDay.innerText = day;
 	$selectedWeekday.innerText = weekday;
+
+	$infoContainer.ariaLabel = readable;
 }
 
 function printMonth() {
@@ -60,6 +69,7 @@ function changeDate(e) {
 
 	$selectedDate?.classList.remove('calendar__date--selected');
 	$clickedDate.classList.add('calendar__date--selected');
+	$infoContainer.dateTime = $clickedDate.dateTime;
 
 	printSelectedDate(date);
 }

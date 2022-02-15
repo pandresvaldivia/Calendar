@@ -85,6 +85,6 @@
 		font: var(--desktop-body2-regular);
 		grid-template-columns: var(--calendar-grid-desktop);
 		grid-template-rows: var(--calendar-rows-desktop);
-		block-size: auto;
+		block-size: 14.605rem;
 	}
 }
