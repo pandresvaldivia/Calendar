@@ -6,9 +6,11 @@ import '../css/calendar.css';
 import '../css/button.css';
 import '../css/navigation.css';
 
-import { $prevMonth, $nextMonth } from './selectors.js';
+import { $prevMonth, $nextMonth, $monthContainer } from './selectors.js';
 import { changeMonth } from './utils/date.js';
-import { printCurrentDate, printCalendar } from './calendar.js';
+import { printCurrentDate, printCalendar, changeDate } from './calendar.js';
+
+$monthContainer.addEventListener('click', changeDate);
 
 $nextMonth.addEventListener('click', () => {
 	changeMonth($nextMonth);

@@ -1,6 +1,11 @@
 import { months, weekdays } from '../constants.js';
 
-function formatDate(day, weekday, month, year) {
+function formatDate(date) {
+	const month = date.getMonth();
+	const year = date.getFullYear();
+	const day = date.getDate();
+	const weekday = date.getDay();
+
 	return {
 		day,
 		weekday: weekdays[weekday],

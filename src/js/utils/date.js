@@ -3,12 +3,7 @@ import { formatDate } from './format-data.js';
 const date = new Date();
 
 function getDate() {
-	const month = date.getMonth();
-	const year = date.getFullYear();
-	const day = date.getDate();
-	const weekday = date.getDay();
-
-	return formatDate(day, weekday, month, year);
+	return formatDate(date);
 }
 
 function getMonthData() {
@@ -38,11 +33,11 @@ function getDatetime(day) {
 		minimumIntegerDigits: 2,
 	});
 
-	return `${year}-${month}-${day}`;
+	return `${year}-${month}-${day}T00:00:00`;
 }
 
 function isToday(date) {
-	const currentDate = new Date().toLocaleDateString('en-CA');
+	const currentDate = `${new Date().toLocaleDateString('en-CA')}T00:00:00`;
 
 	if (date === currentDate) return true;
 }
