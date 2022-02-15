@@ -1,5 +1,11 @@
 .calendar__container {
 	background: var(--white);
+	padding-block: 2.5112rem;
+	padding-inline: 1.2763rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.6587rem;
+	align-items: center;
 }
 
 .calendar__header {
@@ -15,6 +21,7 @@
 .calendar__year {
 	margin: 0;
 	font: var(--year);
+	align-self: flex-start;
 }
 
 .calendar__month {
