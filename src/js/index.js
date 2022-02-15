@@ -5,3 +5,7 @@ import '../css/selected-date.css';
 import '../css/calendar.css';
 import '../css/button.css';
 import '../css/navigation.css';
+
+import { printCurrentDate } from './calendar.js';
+
+printCurrentDate();
