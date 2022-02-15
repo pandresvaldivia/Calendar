@@ -9,3 +9,11 @@
 	display: grid;
 	align-content: center;
 }
+
+@media screen and (min-width: 1000px) {
+	.button {
+		inline-size: 1.5rem;
+		block-size: 1.5rem;
+		font-size: 1.5rem;
+	}
+}

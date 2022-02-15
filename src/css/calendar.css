@@ -6,11 +6,12 @@
 	flex-direction: column;
 	gap: 0.6587rem;
 	align-items: center;
+	justify-content: center;
 }
 
 .calendar__header {
 	display: grid;
-	grid-template-columns: repeat(7, 1.6469rem);
+	grid-template-columns: var(--calendar-grid-mobile);
 	font: var(--small);
 	text-transform: uppercase;
 	column-gap: 0.6587rem;
@@ -26,8 +27,8 @@
 
 .calendar__month {
 	display: grid;
-	grid-template-columns: repeat(7, 1.6469rem);
-	grid-template-rows: repeat(5, 1.6469rem);
+	grid-template-columns: var(--calendar-grid-mobile);
+	grid-template-rows: var(--calendar-rows-mobile);
 	font: var(--medium);
 	column-gap: 0.6587rem;
 	row-gap: 0.3294rem;
@@ -49,4 +50,27 @@
 .calendar__date--selected {
 	background: var(--skyblue);
 	color: var(--primary);
+}
+
+@media screen and (min-width: 1000px) {
+	.calendar__container {
+		gap: 1rem;
+	}
+
+	.calendar__year {
+		align-self: auto;
+		font: var(--desktop-h3);
+	}
+
+	.calendar__header {
+		font: var(--desktop-body3-regular);
+		grid-template-columns: var(--calendar-grid-desktop);
+	}
+
+	.calendar__month {
+		font: var(--desktop-body2-regular);
+		grid-template-columns: var(--calendar-grid-desktop);
+		grid-template-rows: var(--calendar-rows-desktop);
+		block-size: auto;
+	}
 }

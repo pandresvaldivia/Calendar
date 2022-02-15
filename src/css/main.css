@@ -76,6 +76,9 @@
 	--mobile-body1medium: 500 1.125rem/1.81875rem var(--fontBase);
 	--mobile-body2regular: 400 1rem/1.5rem var(--fontBase);
 	--mobile-body2bold: 700 1rem/1.5rem var(--fontBase);
+	--calendar-grid-mobile: repeat(7, 1.6469rem);
+	--calendar-grid-desktop: repeat(7, 2.5rem);
+	--calendar-rows-mobile: repeat(5, 1.6469rem);
 }
 
 .body {

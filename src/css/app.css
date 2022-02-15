@@ -1,0 +1,16 @@
+.app {
+	filter: drop-shadow(0px 227px 176px rgba(0, 0, 0, 0.07))
+		drop-shadow(0px 133.658px 91.8016px rgba(0, 0, 0, 0.050624))
+		drop-shadow(0px 68.6448px 43.0848px rgba(0, 0, 0, 0.039312))
+		drop-shadow(0px 27.6032px 18.8672px rgba(0, 0, 0, 0.030688))
+		drop-shadow(0px 6.1744px 8.1664px rgba(0, 0, 0, 0.019376));
+}
+
+@media screen and (min-width: 1000px) {
+	.app {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		block-size: 31.125rem;
+		inline-size: 62.25rem;
+	}
+}
