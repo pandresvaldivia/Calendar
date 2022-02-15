@@ -1,6 +1,7 @@
 import '../css/main.css';
 import '../css/icons.css';
 import '../css/app.css';
+import '../css/wrapper.css';
 import '../css/selected-date.css';
 import '../css/calendar.css';
 import '../css/button.css';

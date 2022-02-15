@@ -125,55 +125,60 @@
 		<meta name="theme-color" content="#ffffff" />
 	</head>
 	<body class="body">
-		<main>
-			<section class="app" aria-label="Calendar">
-				<section class="selected-date" aria-label="Selected date">
-					<time class="selected-date__info">
-						<span id="day" class="selected-date__day"></span>
-						<span class="selected-date__details">
-							<span id="weekday"></span>
-							<span aria-hidden="true">&middot;</span>
-							<span id="month"></span>
-							<span aria-hidden="true">&middot;</span>
-							<span id="year"></span>
-						</span>
-					</time>
-				</section>
-				<section class="calendar__container" aria-label="Calendar of June 2021">
-					<h2 class="calendar__year"></h2>
-					<nav class="navigation" aria-label="Calendar controls">
-						<button
-							id="prev"
-							class="button"
-							aria-label="Previous month"
-							title="Previous month"
-						>
-							<i class="icon-left" aria-hidden="true"></i>
-						</button>
-						<span class="navigation__title"></span>
-						<button
-							id="next"
-							class="button"
-							aria-label="Next month"
-							title="Next month"
-						>
-							<i class="icon-right" aria-hidden="true"></i>
-						</button>
-					</nav>
-					<div class="calendar">
-						<div class="calendar__header">
-							<span class="calendar__weekday"> Sun </span>
-							<span class="calendar__weekday"> Mon </span>
-							<span class="calendar__weekday"> Tue </span>
-							<span class="calendar__weekday"> Wed </span>
-							<span class="calendar__weekday"> Thu </span>
-							<span class="calendar__weekday"> Fri </span>
-							<span class="calendar__weekday"> Sat </span>
+		<div class="wrapper">
+			<main>
+				<section class="app" aria-label="Calendar">
+					<section class="selected-date" aria-label="Selected date">
+						<time class="selected-date__info">
+							<span id="day" class="selected-date__day"></span>
+							<span class="selected-date__details">
+								<span id="weekday"></span>
+								<span aria-hidden="true">&middot;</span>
+								<span id="month"></span>
+								<span aria-hidden="true">&middot;</span>
+								<span id="year"></span>
+							</span>
+						</time>
+					</section>
+					<section
+						class="calendar__container"
+						aria-label="Calendar of June 2021"
+					>
+						<h2 class="calendar__year"></h2>
+						<nav class="navigation" aria-label="Calendar controls">
+							<button
+								id="prev"
+								class="button"
+								aria-label="Previous month"
+								title="Previous month"
+							>
+								<i class="icon-left" aria-hidden="true"></i>
+							</button>
+							<span class="navigation__title"></span>
+							<button
+								id="next"
+								class="button"
+								aria-label="Next month"
+								title="Next month"
+							>
+								<i class="icon-right" aria-hidden="true"></i>
+							</button>
+						</nav>
+						<div class="calendar">
+							<div class="calendar__header">
+								<span class="calendar__weekday"> Sun </span>
+								<span class="calendar__weekday"> Mon </span>
+								<span class="calendar__weekday"> Tue </span>
+								<span class="calendar__weekday"> Wed </span>
+								<span class="calendar__weekday"> Thu </span>
+								<span class="calendar__weekday"> Fri </span>
+								<span class="calendar__weekday"> Sat </span>
+							</div>
+							<time datetime="2021-06" class="calendar__month"> </time>
 						</div>
-						<time datetime="2021-06" class="calendar__month"> </time>
-					</div>
+					</section>
 				</section>
-			</section>
-		</main>
+			</main>
+		</div>
 	</body>
 </html>
