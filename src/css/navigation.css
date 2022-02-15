@@ -1,0 +1,10 @@
+.navigation {
+	display: flex;
+	gap: 0.9881rem;
+	align-items: center;
+}
+
+.navigation__title {
+	font: var(--medium-bold);
+	text-transform: uppercase;
+}

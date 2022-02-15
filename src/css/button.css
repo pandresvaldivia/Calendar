@@ -1,0 +1,11 @@
+.button {
+	inline-size: 0.9881rem;
+	block-size: 0.9881rem;
+	background: transparent;
+	border: none;
+	font-size: 0.75rem;
+	cursor: pointer;
+	padding: 0;
+	display: grid;
+	align-content: center;
+}

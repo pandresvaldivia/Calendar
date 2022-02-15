@@ -48,8 +48,10 @@
 	--white: #ffffff;
 	--fontBase: Inter, sans-serif;
 	--day: 400 6rem/5.375rem var(--fontBase);
+	--year: 900 1.6469rem/1.9756rem var(--fontBase);
 	--small: 400 0.5763rem/0.9881rem var(--fontBase);
-	--medium: 400 0.6587rem/21.08px var(--fontBase);
+	--medium: 400 0.6587rem/1.3175rem var(--fontBase);
+	--medium-bold: 600 0.6587rem/1.3175rem var(--fontBase);
 	--desktop-h1: 900 5.625rem/5.625rem var(--fontBase);
 	--desktop-h2: 900 3.25rem/4.0625rem var(--fontBase);
 	--desktop-h3: 900 2.5rem/3rem var(--fontBase);
@@ -84,4 +86,5 @@
 	justify-content: center;
 	min-inline-size: 22.5rem;
 	color: var(--black);
+	block-size: 100vh;
 }

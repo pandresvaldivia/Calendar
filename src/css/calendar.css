@@ -12,6 +12,11 @@
 	margin-block-end: 0.3294rem;
 }
 
+.calendar__year {
+	margin: 0;
+	font: var(--year);
+}
+
 .calendar__month {
 	display: grid;
 	grid-template-columns: repeat(7, 1.6469rem);
